@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+section {
+	padding-top: 5rem;
+}
+.container {
+	width: 85vw;
+	margin: auto;
+}
+#top-banner {
+	background-image: url(../images/top-banner.png);
+	background-repeat: no-repeat;
+	height: 550px;
+}
+#dream-big {
+	background-image: url(../images/dream-bg.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.experience {
+	background-image: url(../images/exp-bg.png);
+	background-repeat: no-repeat;
+	background-position: left;
+}
+.experience-heading {
+	text-align: center;
+	padding: 2rem 0rem;
+}
+.banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.banner-description {
+	width: 40%;
+}
+.banner-photo {
+	width: 40%;
+}
+.banner-photo > img {
+	width: 100%;
+}
+h1 {
+	font-size: 40px;
+	padding: 1.7rem 0rem;
+}
+.website-name {
+	padding-top: 0;
+}
+.website-name > span {
+	color: #ffab52;
+}
+.paragraph {
+	padding: 1.3rem 0rem;
+}
+.banner-btn {
+	padding: 0.7rem 1rem;
+	background-color: orange;
+	border: none;
+	border-radius: 0.3rem;
+}
+.banner-btn > a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.2rem;
+}
+.boxes {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.box {
+	width: 45%;
+	padding: 2rem 1.4rem;
+	border-left: 5px solid orange;
+	border-radius: 0.4rem;
+	box-shadow: -1px 2px 18px -1px #8c8c8c;
+}
+.box > h3 {
+	padding: 1.5rem 0rem;
+	color: #ffab52;
+}
+.box > p {
+	font-weight: 400;
+	padding-bottom: 3rem;
+}
+#footer {
+	margin-top: 5rem;
+	padding: 0.8rem 0rem;
+	background: #3e3e3e;
+}
+#footer > p {
+	text-align: center;
+	color: #fff;
+}
+
+/*media quaries*/
+@media screen and (max-width: 1320px) {
+	.box {
+		width: 43%;
+	}
+}
+@media screen and (max-width: 1028px) {
+	.box {
+		width: 41%;
+	}
+}
+@media screen and (max-width: 768px) {
+	#top-banner {
+		height: auto;
+	}
+	.banner {
+		flex-direction: column;
+	}
+	.banner-description {
+		width: 100%;
+	}
+	.banner-photo {
+		width: 100%;
+	}
+	.boxes {
+		flex-direction: column;
+	}
+	.box {
+		width: 100%;
+		margin-top: 1rem;
+	}
+}
